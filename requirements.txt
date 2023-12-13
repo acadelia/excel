@@ -1,0 +1,7 @@
+ce va fi in acest proiect, descrierea lui, niste comenzi de baza.
+
+1 Webpack
+2 Babel
+3 SCSS
+4 mode dev 
+5 mode production

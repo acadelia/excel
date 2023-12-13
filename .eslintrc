@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "quotes": ["error", "double"],
+    "curly": 1
+  },
+  "extends": ["eslint:recommended", "google"],
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "allowImportExportEverywhere": true,
+    "ecmaVersion": 2018
+  }
+}
