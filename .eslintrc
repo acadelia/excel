@@ -5,8 +5,13 @@
     "node": true
   },
   "rules": {
-    "quotes": ["error", "double"],
-    "curly": 1
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "curly": 1,
+    "require-jsdoc": 0,
+    "no-unused-vars": [
+      "error",
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ]
   },
   "extends": ["eslint:recommended", "google"],
   "parserOptions": {
