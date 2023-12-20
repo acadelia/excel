@@ -46,7 +46,7 @@ module.exports = {
     // ../../../src
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@core": path.resolve(__dirname, "core"),
+      "@core": path.resolve(__dirname, "src/core"),
     },
   },
   devtool: isDev ? "source-map" : false,

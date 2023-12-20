@@ -12,6 +12,16 @@
     "no-unused-vars": [
       "error",
       { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "?": "before",
+          ":": "before"
+        }
+      }
     ]
   },
   "extends": ["eslint:recommended", "google"],
