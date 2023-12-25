@@ -21,9 +21,18 @@ export class DOM {
     if (Element.prototype.append) {
       this.$el.append(node);
     } else {
-      this.$el.appendChild(node);
+      this.$el.appendChild();
     }
     return this;
+  }
+
+  clear() {
+    this.html("");
+    return this;
+  }
+
+  on(eventType, callback) {
+    this.$el.addEventListener(eventType, callback);
   }
 }
 

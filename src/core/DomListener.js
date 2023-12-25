@@ -1,3 +1,5 @@
+import { capital } from "./utils";
+
 export class DomListener {
   constructor($root, listeners = []) {
     if (!$root) {
@@ -7,7 +9,13 @@ export class DomListener {
     this.listeners = listeners;
   }
   initDomListeners() {
-    console.log(this.listeners);
+    this.listeners.forEach((listener) => {
+      const method = `on${capital(listener)}`;
+      console.log(method);
+      this.$root.on(listener, () => {
+        console.log("hello");
+      });
+    });
   }
   removeDomListeners() {}
 }
