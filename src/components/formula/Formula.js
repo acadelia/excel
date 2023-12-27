@@ -4,11 +4,11 @@ export class Formula extends ExcelComponent {
   static className = "excel__formula";
 
   constructor($root) {
-    super($root, { listeners: ["input", "click"] });
+    super($root, { name: "Formula", listeners: ["input"] });
   }
 
   onInput(ev) {
-    console.log("formula on input", ev);
+    console.log("formula on input", ev.target.textContent);
   }
 
   toHTML() {
